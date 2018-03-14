@@ -1,6 +1,6 @@
 ### Hiệu ứng Bouncing loader (Đang tải)
 
-Tạo một hiệu ứng đang tải.
+~~Tạo một hiệu ứng đang tải~~ **Tạo hiệu ứng nảy khi tải trang**.
 
 #### HTML
 
@@ -90,12 +90,12 @@ Tạo một hiệu ứng đang tải.
 
 Ghi chú: `1rem` thường là bằng `16px`.
 
-1. `@keyframes` định nghĩa một hiệu ứng có 2 trạng thái, nơi mà các phẩn tử thay đổi `opacity` và được dịch trên một bề mặt 2D sử dụng `transform: translateY()`.
+1. `@keyframes` định nghĩa một hiệu ứng có 2 trạng thái, nơi mà các phẩn tử thay đổi `opacity` và được dịch trên một ~~bề mặt~~   **mặt phảng** 2D sử dụng `transform: translateY()`.
 
-2. `.bouncing-loader` là phần tử mẹ của các vòng tròn xoay và sử dụng `display: flex`, `justify-content: center` để căn
+2. `.bouncing-loader` là ~~phần tử mẹ~~ **khối chứa** của các vòng tròn xoay và sử dụng `display: flex`, `justify-content: center` để căn
 chỉnh vị trí của chúng ra giữa
 
-3. `.bouncing-loader > div`, mục đích của 3 thẻ `div` con là để style. Các thẻ `div` đã được đưa ra sẵn một chiều rộng và chiều cao là `1rem`, sử dung `border-radius: 50%` để chuyển chúng từ hình vuông sang hình tròn.
+3. `.bouncing-loader > div`, ~~mục đích~~ **tập trung** của 3 thẻ `div` con là để style. Các thẻ `div` đã được đưa ra sẵn một chiều rộng và chiều cao là `1rem`, sử dung `border-radius: 50%` để chuyển chúng từ hình vuông sang hình tròn.
 
 4. `margin: 3rem 0.2rem` chỉ ra cụ thể rằng mỗi hình tròn có một margin top/bottom là `3rem` và left/right là `0.2rem`,
 vì vậy để chúng tách rời ra vs nhau thì hãy cho chúng một khoảng trống.
@@ -165,7 +165,7 @@ html {
 
 ### Clearfix
 
-Đảm bảo rằng các phần tử con đã loại bỏ hết các phần tử con của nó.
+Đảm bảo rằng các ~~phần tử con đã loại bỏ hết các phần tử con của nó~~ **phần tử tự xóa con của nó**.
 
 ###### Ghi chú: Điều này chỉ hữu ích nếu bạn vẫn dùng float để xây dựng giao diện. Hãy xem xét sử dụng một cách tiếp cận hiện đại hơn với giao diện flexbox hoặc giao diện lưới(grid).
 
@@ -960,7 +960,7 @@ Màu của chữ nên bị mờ nhẹ để khiến nó trông như được kh�
 
 ### Tô màu chuyển chữ
 
-Khiến chữ có màu ch
+~~Khiến chữ có màu ch~~ **cho văn bản một màu gradient**
 
 #### HTML
 
@@ -1098,7 +1098,7 @@ Cho phần tử 1 đường viền tương đương 1 pixel thiết bị tự nh
 
 ###  cuộn tràn
 
-Thêm 1 cái dốc mờ vào phần từ tràn để biểu thị rõ hơn việc có thêm nội dung có thể cuộn.
+Thêm 1 ~~cái dốc mờ~~ **gradient fading** vào phần từ tràn để biểu thị rõ hơn việc có thêm nội dung có thể cuộn.
 
 #### HTML
 
@@ -1431,7 +1431,7 @@ Sử dụng font tự nhiên hệ thống để có cảm giác ứng dụng t�
 
 Trình duyệt tìm kiếm mỗi font kế tiếp, ưu tiên cái đầu tiên có thể, và đến tiếp cái tiếp theo nếu không thể tìm thấy font(trên hệ thống hoặc định nghĩa trong css)
 
-1. `-apple-system` là San Francisco, sử dụng trên iOs và macOs(tuy nhiên không phải Chrome)
+1. `-apple-system` ~~là San Francisco~~ **ở San Francisco**, sử dụng trên iOs và macOs(tuy nhiên ~~không phải~~ **không có** Chrome)
 2. `BlinkMacSystemFont` là San francisco, sử dụng trên macOs chrome
 3. `Segoe UI` sử dụng trên Windows 10
 4. `Roboto` sử dụng trên Android
